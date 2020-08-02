@@ -18,6 +18,14 @@ def NewHome():
 def DogPage():
 	return render_template('dogpage.html')
 
+@app.route('/check.html')
+def Check():
+	return render_template('check.html')
+
+@app.route('/starter.html')
+def starter():
+	return render_template('starter.html')
+
 
 @app.route('/adopt.html' , methods=['GET','POST'])
 def upload():
