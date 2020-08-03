@@ -30,6 +30,10 @@ def starter():
 def third():
 	return render_template('third.html')
 
+@app.route('/donate.html')
+def donate():
+	return render_template('donate.html')
+
 
 @app.route('/adopt.html' , methods=['GET','POST'])
 def upload():
