@@ -26,6 +26,10 @@ def Check():
 def starter():
 	return render_template('starter.html')
 
+@app.route('/third.html')
+def third():
+	return render_template('third.html')
+
 
 @app.route('/adopt.html' , methods=['GET','POST'])
 def upload():
